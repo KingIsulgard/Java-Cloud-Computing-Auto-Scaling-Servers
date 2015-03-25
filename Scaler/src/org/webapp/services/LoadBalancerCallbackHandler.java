@@ -1,0 +1,106 @@
+
+/**
+ * LoadBalancerCallbackHandler.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis2 version: 1.6.2  Built on : Apr 17, 2012 (05:33:49 IST)
+ */
+
+    package org.webapp.services;
+
+    /**
+     *  LoadBalancerCallbackHandler Callback class, Users can extend this class and implement
+     *  their own receiveResult and receiveError methods.
+     */
+    public abstract class LoadBalancerCallbackHandler{
+
+
+
+    protected Object clientData;
+
+    /**
+    * User can pass in any object that needs to be accessed once the NonBlocking
+    * Web service call is finished and appropriate method of this CallBack is called.
+    * @param clientData Object mechanism by which the user can pass in user data
+    * that will be avilable at the time this callback is called.
+    */
+    public LoadBalancerCallbackHandler(Object clientData){
+        this.clientData = clientData;
+    }
+
+    /**
+    * Please use this constructor if you don't want to set any clientData
+    */
+    public LoadBalancerCallbackHandler(){
+        this.clientData = null;
+    }
+
+    /**
+     * Get the client data
+     */
+
+     public Object getClientData() {
+        return clientData;
+     }
+
+        
+               // No methods generated for meps other than in-out
+                
+           /**
+            * auto generated Axis2 call back method for queueSize method
+            * override this method for handling normal response from queueSize operation
+            */
+           public void receiveResultqueueSize(
+                    org.webapp.services.LoadBalancerStub.QueueSizeResponse result
+                        ) {
+           }
+
+          /**
+           * auto generated Axis2 Error handler
+           * override this method for handling error response from queueSize operation
+           */
+            public void receiveErrorqueueSize(java.lang.Exception e) {
+            }
+                
+           /**
+            * auto generated Axis2 call back method for putRunnable method
+            * override this method for handling normal response from putRunnable operation
+            */
+           public void receiveResultputRunnable(
+                    org.webapp.services.LoadBalancerStub.PutRunnableResponse result
+                        ) {
+           }
+
+          /**
+           * auto generated Axis2 Error handler
+           * override this method for handling error response from putRunnable operation
+           */
+            public void receiveErrorputRunnable(java.lang.Exception e) {
+            }
+                
+           /**
+            * auto generated Axis2 call back method for getResult method
+            * override this method for handling normal response from getResult operation
+            */
+           public void receiveResultgetResult(
+                    org.webapp.services.LoadBalancerStub.GetResultResponse result
+                        ) {
+           }
+
+          /**
+           * auto generated Axis2 Error handler
+           * override this method for handling error response from getResult operation
+           */
+            public void receiveErrorgetResult(java.lang.Exception e) {
+            }
+                
+               // No methods generated for meps other than in-out
+                
+               // No methods generated for meps other than in-out
+                
+               // No methods generated for meps other than in-out
+                
+
+
+    }
+    
